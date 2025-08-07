@@ -1,0 +1,64 @@
+/* CSS (Cascading Style Sheets) é uma linguagem de estilo, com função de definir como será a distribuição e estilo de elementos de marcação */
+*{  /* em css definimos primeiramente o elemento à ser editado e entre {} escrevemos as modificações (* seleciona todos os elementos) */
+    font-size: 16px;  /* tamanho da fonte (px é a und. para pixels) */
+    font-family: Arial, Helvetica, sans-serif;  /* família da fonte (tenta torna-la simples e legível ao usuário) */
+    padding: 0;  /* preenchimento */
+    margin: 0;  /* margem */
+    outline: 0;  /* linha externa */
+}
+
+header{  /* queremos modificar cabelçaho */
+    background-color: #7021b9;  /* define cor de fundo */
+}
+
+header > div{  /* queremos centralizar o conteúdo do cabeçalho // o operador '>' demonstra um filho direto do elemento anteriormente definido (neste caso o 'header') */
+    width: 1200px;  /* largura do elemento */
+    margin: auto;  /* determina margem ('auto' deixa as margens esquerda e direita simétricas) */
+    display: flex;  /* modifica forma de exibição do elemento (flex permite distribuir elementos filhos) */
+    justify-content: space-between;  /* modifica a distribuição do display (space-between deixa elementos lado a lado) */
+}
+
+h1{
+    font-size: 3em;  /* tamanho da fonte 3 vezes maior ('em' é uma und. para alterar o tamanho de fonte padrão, multiplicando-a pelo valor informado) */
+    color: #e0f332;  /* cor do texto */
+    margin-top: 0.3em;  /* margem superior */
+    margin-bottom: 0.3em;  /* margem inferior */
+}
+
+header > div > div{
+    margin-top: 1.5em;
+}
+
+header span{
+    color: #ffffff;
+    font-weight: bold;  /* define espessura da fonte (negrito) */
+    margin-left: 0.5em;
+}
+
+header button{
+    background-color: #e0f332;
+    padding: 0.5em;
+    border-radius: 1em;
+    font-weight: bold;
+}
+
+nav{  /* agora vamos mudar o menu */
+    background-color: #521a87;
+}
+
+nav > div{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > div > div{
+    background-color: #7021b9;
+    display: flex;
+}
+nav a{
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: none;  /* define se existem underlines */
+}
